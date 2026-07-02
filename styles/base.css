@@ -1,0 +1,90 @@
+/* --- ESTILOS GLOBALES --- */
+:root {
+  --primary-color: #333333;
+  --bg-color: #ffffff;
+  --font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/*****************HEADER*****************/
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  align-items: end;
+  padding: 5px 0 10px;
+  border-bottom: 1px solid #ddd;
+  column-gap: 8px;
+}
+
+header img {
+  width: 100%;
+  display: block;
+  height: 24px;
+  padding-bottom: 5px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: #3d405b;
+}
+
+/***************HAMBURGER***************/
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3d405b;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/***************NAVIGATION***************/
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  color: #3d405b;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+  background-color: #e07a5f;
+}
+
+
+
+h1 {
+    margin-left: 10px;
+}

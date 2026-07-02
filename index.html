@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W01: Learning Activity - CSS Normalization</title>
+    <title>Document</title>
     
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     
-    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
     <header>
-        <h1>W01: Normalization with Normalize.css</h1>
-        <p>Course: WDD231 - Web Frontend Development II</p>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Dember's Site Title</span>
+        <button id="ham-btn" class="hamburger"></button>
     </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">News & Events</a></li>
+            <li><a href="#">Dedicates Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
 
+
+    </nav>
     <main>
-        <section>
-            <h2>Normalized Elements Demonstration</h2>
-            <p>This is a sample paragraph.</p>
-            
-            <button type="button">Test Button</button>
-        </section>
-
-        <section>
-            <h2>Sample Form Element</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name...">
-            </form>
-        </section>
+        <h1>Dedicates Temples</h1>
     </main>
+    <footer></footer>
+    <script src="scripts/navigation.js"></script>
 
-    <footer>
-        <p>&copy; 2026 | Dember Perez Colquehuanca</p>
-    </footer>
 
 </body>
 </html>
