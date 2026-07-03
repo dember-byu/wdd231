@@ -1,8 +1,11 @@
-/* --- ESTILOS GLOBALES --- */
+
 :root {
-  --primary-color: #333333;
-  --bg-color: #ffffff;
-  --font-family: 'Segoe UI', Roboto, sans-serif;
+  --primary-color: #1A252C;    
+  --accent-color: #52796F;    
+  --hover-color: #84A98C;      
+  --bg-color: #CAD2C5;         
+  --card-bg: #FFFFFF;
+  --font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,28 +13,35 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-color);
   margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  padding: 1rem;
 }
 
 /*****************HEADER*****************/
 header {
   display: grid;
-  grid-template-columns: 24px auto 44px;
-  align-items: end;
-  padding: 5px 0 10px;
-  border-bottom: 1px solid #ddd;
-  column-gap: 8px;
+  grid-template-columns: 40px auto 44px; 
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  border-bottom: 3px solid var(--accent-color);
 }
 
 header img {
   width: 100%;
   display: block;
-  height: 24px;
+  height: auto;
   padding-bottom: 5px;
 }
 
 header span {
   font-size: 1.2rem;
-  color: #3d405b;
+  color: #FFFFFF;
+  margin-left: 10px;
+  font-weight: 700;
 }
 
 /***************HAMBURGER***************/
@@ -72,19 +82,167 @@ header span {
   padding: .8rem 10px;
   color: #3d405b;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #39ed07;
+  transition: background-color 0.3s ease;
 }
 
 .navigation li.current {
-    background-color: #eee;
+  background-color: var(--primary-color);
+  font-weight: bold;
 }
 
 .navigation a:hover {
   background-color: #e07a5f;
+  color: var(--primary-color);
+}
+
+
+/*************** MAIN CONTENT ***************/
+main {
+  max-width: 100%;
+}
+
+main h1 {
+  font-size: 1.8rem;
+  color: var(--primary-color); 
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
 }
 
 
 
-h1 {
-    margin-left: 10px;
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent-color);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.card.student-photo {
+  text-align: center;
+}
+
+.card.student-photo img {
+  display: inline-block; 
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; 
+}
+
+/*************** FOOTER ***************/
+footer {
+  background-color: var(--primary-color);
+  color: #FFFFFF; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #E2E8F0;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div, footer p, footer span {
+  color: #FFFFFF; 
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; 
+  margin-top: 0.5rem;
+}
+
+.footer-social a {
+  color: #E2E8F0; 
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-social a:hover {
+  color: var(--hover-color); 
+  transform: scale(1.1);       
+}
+.footer-social svg {
+  display: block;
+  width: 28px;  
+  height: 28px;
+}
+
+/*************** DYNAMIC COURSE ELEMENTS ***************/
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.filter-buttons button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: var(--font-family);
+  transition: background-color 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--primary-color);
+}
+
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+.course-card {
+  background-color: #E9ECEF;
+  color: #000000; 
+  border: 1px solid #94A3B8;
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.course-card.completed {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+}
+
+.total-credits {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--primary-color);
 }
