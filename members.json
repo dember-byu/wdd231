@@ -1,0 +1,23 @@
+{
+  "family_name": "Perez",
+  "move_in_date": "2026-02-14",
+  "number_of_people": 3,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": "Dember Perez",
+      "gender": "Male",
+      "birthdate": "2000-07-11"
+    },
+    {
+      "name": "Elena Perez",
+      "gender": "Female",
+      "birthdate": "2003-04-22"
+    },
+    {
+      "name": "Lucas Perez",
+      "gender": "Male",
+      "birthdate": "2024-11-05"
+    }
+  ]
+}
