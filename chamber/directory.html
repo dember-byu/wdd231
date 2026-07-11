@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Directory - Cochabamba Chamber of Commerce</title>
+    <meta name="description" content="Official directory of business members and organizations belonging to the Cochabamba Chamber of Commerce. Connect with local industry leaders.">
+    <meta name="author" content="Dember Perez Colquehuanca">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <meta property="og:title" content="Member Directory - Cochabamba Chamber of Commerce">
+    <meta property="og:description" content="Find and support local businesses in our community through our interactive member directory.">
+    <meta property="og:image" content="https://dember-byu.github.io/wdd231/chamber/images/chamber-og-share.webp">
+    <meta property="og:url" content="https://dember-byu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            
+            <div class="logo-area">
+                <img src="images/favicon.ico" alt="Official logo of the Cochabamba Chamber of Commerce" width="35" height="35">
+                <h1>Cochabamba Chamber of Commerce</h1>
+            </div>
+            
+            <div class="header-controls">
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode"></button>
+                <button id="menu-toggle" aria-label="Open Navigation Menu">☰</button>
+            </div>
+        </div>
+
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="directory-title">Business Directory</h2>
+        
+        <div class="view-controls">
+            <button id="grid-btn" class="active" aria-label="Switch to grid view">Grid View ☰</button>
+            <button id="list-btn" aria-label="Switch to list view">List View ‖</button>
+        </div>
+
+        <article id="directory-container" class="grid-view" aria-labelledby="directory-title">
+        </article>
+    </main>
+
+    <footer>
+
+    <div class="footer-left">
+        <strong>Cochabamba Chamber of Commerce</strong>
+        <p>Av. Ballivián #123, El Prado</p>
+        <p>Cochabamba, Bolivia</p>
+        <p>info@camaracbba.org.bo</p>
+        <p>(591) 4 455-2300</p>
+    </div>
+
+
+    <div class="footer-socials">
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube channel">
+            <img src="images/youtube-icon.png" alt="YouTube Icon" width="40" height="40">
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter profile">
+            <img src="images/twitter-icon.png" alt="Twitter Icon" width="40" height="40">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page">
+            <img src="images/linkedin-icon.png" alt="LinkedIn Icon" width="40" height="40">
+        </a>
+    </div>
+
+
+    <div class="footer-right">
+        <p>WDD231 Class Project</p>
+        <p>Dember Perez Colquehuanca</p>
+        <p>&copy; <span id="current-year"></span> Cbba. Chamber of Commerce</p>
+        <p id="last-modified">Last Modification: </p>
+    </div>
+</footer>
+
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>
