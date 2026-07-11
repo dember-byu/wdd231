@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Estilos Base para Dispositivos Móviles (Mobile-First >= 320px)
+   ========================================================================== */
+
 :root {
     --primary-color: #004D73;    
     --secondary-color: #1B5E20;  
@@ -8,13 +12,11 @@
     --body-font: 'Open Sans', sans-serif;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 body {
     font-family: var(--body-font);
@@ -23,7 +25,8 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+/* CORRECCIÓN: Se eliminó h1 de la regla global para que solo afecte a los títulos internos */
+h2, h3, h4 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     line-height: 1.2;
@@ -43,7 +46,6 @@ header {
     width: 100%;
 }
 
-
 .logo-area {
     display: flex;
     align-items: center;
@@ -55,20 +57,21 @@ header {
     height: 35px;
 }
 
-.logo-area h1 {
+/* CORRECCIÓN: Se cambió '.logo-area h1' por la nueva clase del párrafo del HTML */
+.logo-area .header-site-title {
+    font-family: var(--heading-font);
     font-size: 1.05rem;
     font-weight: 700;
     max-width: 160px; 
     color: var(--text-color); 
+    line-height: 1.2;
 }
-
 
 .header-controls {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
-
 
 .dark-mode-toggle {
     background: linear-gradient(90deg, #000000 50%, #ffffff 50%);
@@ -79,7 +82,6 @@ header {
     cursor: pointer;
 }
 
-
 #menu-toggle {
     background: none;
     border: none;
@@ -88,7 +90,6 @@ header {
     cursor: pointer;
     padding: 0 0.25rem;
 }
-
 
 #main-nav {
     display: none; 
@@ -127,7 +128,7 @@ header {
     background-color: #D0D0D0;
 }
 
-/*PRINCIPAL (MAIN) */
+/* PRINCIPAL (MAIN) */
 main {
     padding: 1.25rem 1rem;
     background-color: var(--card-bg);
@@ -136,10 +137,14 @@ main {
     flex-direction: column;
 }
 
-main h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+/* Mantiene el control y el estilo del h1 semántico único de tu página */
+main h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem; /* Ajustado sutilmente para pantallas móviles chicas */
+    margin-bottom: 1.25rem;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 /* View button (GRID / LIST) */
@@ -168,7 +173,7 @@ main h2 {
     border-color: var(--primary-color);
 }
 
-
+/* MODO CUADRÍCULA (GRID VIEW) */
 .grid-view {
     display: flex;
     flex-direction: column;
@@ -214,8 +219,7 @@ main h2 {
     font-size: 0.85rem;
 }
 
-
-
+/* MODO LISTA (LIST VIEW) */
 .list-view {
     display: flex;
     flex-direction: column;
@@ -229,7 +233,6 @@ main h2 {
     border-radius: 4px;
     text-align: left;
 }
-
 
 .list-view .member-card img,
 .list-view .member-card .tagline {
