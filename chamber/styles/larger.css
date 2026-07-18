@@ -138,3 +138,29 @@
         margin: 0 0 0.15rem 0;
     }
 }
+
+/*adding styles for the spotlight section */
+/* Layout de Rejilla para Escritorio */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    grid-column: 1 / -1; /* El banner ocupa todo el ancho */
+}
+
+.events-card {
+    grid-column: 1 / 2;
+}
+
+.weather-card {
+    grid-column: 2 / 3;
+}
+
+.spotlight-section {
+    grid-column: 3 / 4;
+}
