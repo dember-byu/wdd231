@@ -78,6 +78,34 @@ const courses = [
     }
 ]
 
+// Reference global HTML
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    
+    courseDetails.innerHTML = '';
+    
+    
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    
+    // show window modal 
+    courseDetails.showModal();
+    
+    
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 
 function displayCourses(filteredCourses) {
     
@@ -116,6 +144,11 @@ function displayCourses(filteredCourses) {
             <strong>${course.subject} ${course.number}</strong>
         `;
         
+        // New: Event listener to display course details in a modal when a course card is clicked
+        courseCard.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         container.appendChild(courseCard);
     });
 
@@ -138,4 +171,14 @@ function displayCourses(filteredCourses) {
 
 document.addEventListener("DOMContentLoaded", () => {
     displayCourses(courses);
+
+    // New: Close the modal natively if the user clicks outside the modal on the translucent background
+    if (courseDetails) {
+        courseDetails.addEventListener('click', (event) => {
+            if (event.target === courseDetails) {
+                courseDetails.close();
+            }
+        });
+    }
+
 });

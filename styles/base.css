@@ -247,3 +247,83 @@ footer div, footer p, footer span {
   font-size: 1.1rem;
   color: var(--primary-color);
 }
+
+/*************** MODAL DIALOG STYLES ***************/
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem; 
+  background-color: var(--card-bg);
+  box-shadow: 0 0 3rem var(--primary-color);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  animation: fadeIn 0.3s ease-out;
+}
+
+
+dialog h2 {
+  color: var(--accent-color);
+  margin-top: 0;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+dialog h3 {
+  color: var(--primary-color);
+  margin: 0.5rem 0 1rem 0;
+}
+
+dialog p {
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+
+::backdrop {
+  background-color: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(3px); 
+}
+
+/* Botón ❌ */
+dialog button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+dialog button:hover {
+  transform: scale(1.2);
+}
+
+
+.course-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
