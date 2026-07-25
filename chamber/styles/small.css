@@ -298,13 +298,6 @@ footer {
 
 /*adding styles for the spotlight section */
 
-.hero-section {
-    position: relative;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 .hero-image {
     width: 100%;
     height: auto;
