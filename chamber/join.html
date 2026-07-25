@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
 
+    <meta property="og:title" content="Join the Cochabamba Chamber of Commerce Today">
+    <meta property="og:description" content="Apply for our membership tiers online. Connect with local industry leaders and accelerate your business growth in Bolivia.">
+    <meta property="og:image" content="https://github.io">
+    <meta property="og:url" content="https://github.io">
+    <meta property="og:type" content="website">
+
     <script src="scripts/join.js" defer></script>
 </head>
 <body>
@@ -51,55 +57,64 @@
         <section class="form-section">
             <h2>Membership Application Form</h2>
             <form method="get" action="thankyou.html">
-                <label title="First Name">
-                    <span class="field-label">First Name</span>
-                    <input type="text" name="firstName" autocomplete="given-name" required>
-                </label>
+    <label>
+        <span class="field-label">First Name *</span>
+        <!-- Agregado title e id descriptivo -->
+        <input type="text" name="firstName" id="firstName" autocomplete="given-name" title="Applicant's First Name" required>
+    </label>
 
-                <label title="Last Name">
-                    <span class="field-label">Last Name</span>
-                    <input type="text" name="lastName" autocomplete="family-name" required>
-                </label>
+    <label>
+        <span class="field-label">Last Name *</span>
+        <!-- Agregado title -->
+        <input type="text" name="lastName" id="lastName" autocomplete="family-name" title="Applicant's Last Name" required>
+    </label>
 
-                <label title="Organizational Title">
-                    <span class="field-label">Title</span>
-                    <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters.">
-                </label>
+    <label>
+        <span class="field-label">Title</span>
+        <!-- Se mantiene tu patrón válido -->
+        <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
+    </label>
 
-                <label title="Email Address">
-                    <span class="field-label">Email</span>
-                    <input type="email" name="email" autocomplete="email" placeholder="dember93@gmail.com" required>
-                </label>
+    <label>
+        <span class="field-label">Email *</span>
+        <!-- Agregado title -->
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="john89@gmail.com" title="Primary Business Email Address" required>
+    </label>
 
-                <label title="Mobile Phone Number">
-                    <span class="field-label">Cell Phone</span>
-                    <input type="tel" name="phone" autocomplete="tel" placeholder="987-555-1234" required>
-                </label>
+    <label>
+        <span class="field-label">Cell Phone *</span>
+        <!-- Agregado title -->
+        <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="987-555-1234" title="Mobile Phone Number" required>
+    </label>
 
-                <label title="Business or Organization Name">
-                    <span class="field-label">Organization</span>
-                    <input type="text" name="organization" autocomplete="organization" required>
-                </label>
+    <label>
+        <span class="field-label">Organization *</span>
+        <!-- Agregado title -->
+        <input type="text" name="organization" id="organization" autocomplete="organization" title="Business or Organization Name" required>
+    </label>
 
-                <label title="Business Description">
-                    <span class="field-label">Business Description</span>
-                    <textarea name="description" rows="4"></textarea>
-                </label>
+    <label>
+        <span class="field-label">Business Description</span>
+        <!-- Agregado title al textarea -->
+        <textarea name="description" id="description" title="Brief Description of the Business or Organization" rows="4"></textarea>
+    </label>
 
-                <label title="Membership Level" class="select-label">
-                    <span class="field-label">Membership Level *</span>
-                    <select name="membershipLevel" required>
-                        <option value="" disabled selected>Select your level...</option>
-                        <option value="np">Non Profit Membership Level</option>
-                        <option value="bronze">Bronze Membership Level</option>
-                        <option value="silver">Silver Membership Level</option>
-                        <option value="gold">Gold Membership Level</option>
-                    </select>
-                </label>
+    <label class="select-label">
+        <span class="field-label">Membership Level *</span>
+        <!-- Agregado title al select -->
+        <select name="membershipLevel" id="membershipLevel" title="Select a Membership Level" required>
+            <option value="" disabled selected>Select your level...</option>
+            <option value="np">Non Profit Membership Level</option>
+            <option value="bronze">Bronze Membership Level</option>
+            <option value="silver">Silver Membership Level</option>
+            <option value="gold">Gold Membership Level</option>
+        </select>
+    </label>
 
-                <input type="hidden" name="timestamp" id="form-timestamp">
-                <input type="submit" value="Submit Application" class="submit-btn">
-            </form>
+    <input type="hidden" name="timestamp" id="form-timestamp">
+    <input type="submit" value="Submit Application" class="submit-btn">
+</form>
+
         </section>
 
         
