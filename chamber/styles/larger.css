@@ -78,7 +78,7 @@
         word-break: break-all;
     }
 
-    .grid-view .url-text a:hover {
+    .url-text a:hover {
         color: #2E7D32;
     }
 }
