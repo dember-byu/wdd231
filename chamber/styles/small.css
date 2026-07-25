@@ -73,15 +73,6 @@ header {
     gap: 0.75rem;
 }
 
-.dark-mode-toggle {
-    background: linear-gradient(90deg, #000000 50%, #ffffff 50%);
-    border: 1px solid #000000;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-}
-
 #menu-toggle {
     background: none;
     border: none;
@@ -306,9 +297,6 @@ footer {
 
 
 /*adding styles for the spotlight section */
-
-/* Estilos Base para la Home */
-
 
 .hero-section {
     position: relative;
