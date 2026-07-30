@@ -1,0 +1,149 @@
+/* ==========================================================================
+   COLOR SCHEME DESIGN SYSTEM (Criteria 4 & 5)
+   ========================================================================== */
+:root {
+    --primary-color: #2E5A44;   
+    --secondary-color: #D97736; 
+    --bg-light: #F4F7F5;        
+    --text-dark: #222222;       
+    --card-bg: #FFFFFF;        
+}
+
+/* ==========================================================================
+   TYPOGRAPHY SYSTEM (Criterion 6)
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* ==========================================================================
+   STRUCTURAL LAYOUT COMPONENTS (Criterion 8 - Valid CSS)
+   ========================================================================== */
+header {
+    border-bottom: 4px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    border-left: 6px solid var(--secondary-color);
+    padding-left: 15px;
+    font-size: 1.6rem;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   VISUAL PROOF SAMPLES (Displays Scheme & Type live in Document)
+   ========================================================================== */
+.color-palette {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.color-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    border: 1px solid #E0E0E0;
+}
+
+.primary-box { background-color: var(--primary-color); color: var(--card-bg); }
+.secondary-box { background-color: var(--secondary-color); color: var(--card-bg); }
+.bg-box { background-color: var(--bg-light); color: var(--text-dark); }
+.text-box { background-color: var(--text-dark); color: var(--card-bg); }
+
+.font-sample-heading {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.font-sample-body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+/* ==========================================================================
+   WIREFRAME RESPONSIVE LAYOUT SYSTEM (Criterion 7)
+   ========================================================================== */
+.wireframe-placeholder {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wireframe-placeholder img {
+    flex: 1;
+    min-width: 50px;   
+    max-width: 100%;     
+    height: auto;       
+    border: 2px dashed var(--primary-color); 
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.wireframe-gallery {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .wireframe-placeholder img {
+        max-width: 100%;
+    }
+}
+
