@@ -71,10 +71,6 @@ document.querySelector("#current-year").textContent = new Date().getFullYear();
 document.querySelector("#last-modified").textContent = `Last Modified: ${document.lastModified}`;
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    getMembers();
-    applyWayfinding();
-});
 
 function applyWayfinding() {
     const currentURL = window.location.pathname.split("/").pop();
