@@ -486,3 +486,104 @@ dialog::backdrop {
         display: flex;
     }
 }
+
+
+/* ==========================================================================
+   MOBILE / SMALL SCREENS (320px to 640px)
+   ========================================================================== */
+.discover-grid {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "c1" "c2" "c3" "c4"
+        "c5" "c6" "c7" "c8";
+}
+
+
+.card1 { grid-area: c1; }
+.card2 { grid-area: c2; }
+.card3 { grid-area: c3; }
+.card4 { grid-area: c4; }
+.card5 { grid-area: c5; }
+.card6 { grid-area: c6; }
+.card7 { grid-area: c7; }
+.card8 { grid-area: c8; }
+
+/* Base Card Styling */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card figure {
+    margin: 0;
+    overflow: hidden; /* Essential to keep zoomed images from overflowing */
+    border-radius: 4px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Visitor Message Styling */
+.visitor-message {
+    background-color: #e2f0d9;
+    border-left: 5px solid #385723;
+    padding: 15px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   TABLET / MEDIUM SCREENS (641px to 1024px)
+   ========================================================================== */
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "c1 c3"
+            "c2 c4"
+            "c5 c7"
+            "c6 c8";
+    }
+
+
+    .card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    .card figure:hover img {
+        transform: scale(1.08);
+        filter: grayscale(30%) drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+}
+
+/* ==========================================================================
+   DESKTOP / LARGE SCREENS (1025px and above)
+   ========================================================================== */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-areas:
+            "c1 c2 c3"
+            "c4 c5 c6"
+            "c7 c8 c9";
+    }
+    
+    .card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .card figure img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.08);
+    }
+}
