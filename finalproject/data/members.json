@@ -1,0 +1,66 @@
+[
+  {
+    "name": "PIL Andina S.A.",
+    "address": "Av. Blanco Galindo Km 10.5, Colcapirhua",
+    "phone": "+591 4 4361234",
+    "website": "https://pilandina.com.bo",
+    "image": "logo-pil.webp",
+    "membershipLevel": 3,
+    "tagline": "Daily nutrition and freshness for Bolivian families."
+  },
+  {
+    "name": "Cervecería Taquiña",
+    "address": "Av. Centenario, Zona Taquiña Alta",
+    "phone": "+591 4 4285500",
+    "website": "https://taquina.com.bo",
+    "image": "logo-taquina.webp",
+    "membershipLevel": 3,
+    "tagline": "The pride of Cochabamba, brewed with mountain water."
+  },
+    {
+    "name": "Pastelería y Heladería Globos",
+    "address": "Av. Ballivián #425, El Prado",
+    "phone": "+591 4 4521414",
+    "website": "https://heladeriaglobos.com/",
+    "image": "logo-globos.webp",
+    "membershipLevel": 1,
+    "tagline": "Sharing sweet moments and the finest pastry tradition of the Llajta."
+  },
+  {
+    "name": "ECCSA - COBOCE R.L.",
+    "address": "Av. Juan de la Rosa #235, Zona Estadio",
+    "phone": "+591 4 4452030",
+    "website": "https://coboce.com/eccsa",
+    "image": "logo-eccsa.webp",
+    "membershipLevel": 2,
+    "tagline": "Efficient engineering and construction driving the development of the Llajta."
+  },
+  {
+    "name": "Supermercados Hipermaxi",
+    "address": "Av. Juan de la Rosa esq. Av. Bení, Zona Cala Cala",
+    "phone": "+591 4 4481122",
+    "website": "https://www.hipermaxi.com/",
+    "image": "logo-hipermaxi.webp",
+    "membershipLevel": 3,
+    "tagline": "Variety, freshness, and savings for your Cochabamba home."
+  },
+    {
+    "name": "Jalasoft S.R.L.",
+    "address": "Av. Melchor Pérez de Olguín #2643, Zona Sarco",
+    "phone": "+591 4 4308282",
+    "website": "https://www.jalasoft.com",
+    "image": "logo-jalasoft.webp",
+    "membershipLevel": 2,
+    "tagline": "World-class software engineering exporting talent from the Llajta."
+  },
+    {
+    "name": "Avícola Sofía S.A.",
+    "address": "Av. Blanco Galindo Km 6.5, Zona Industrial",
+    "phone": "+591 4 4432000",
+    "website": "https://sofia.com.bo",
+    "image": "logo-sofia.webp",
+    "membershipLevel": 1,
+    "tagline": "High-quality food contributing to the well-being of Bolivian families."
+  }
+
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our complete directory of hiking trails and high-altitude lagoons in Tiraque. Filter routes by difficulty level.">
+  <meta name="author" content="Dember Perez">
+  <title>Trails Directory - Eco-Trails Tiraque</title>
+
+  <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:title" content="Trails Directory - Eco-Trails Tiraque">
+    <meta property="og:description" content="Browse our complete directory of hiking trails and high-altitude lagoons in Tiraque. Filter routes by difficulty level.">
+    <meta property="og:image" content="https://dember-byu.github.io/wdd231/finalproject/images/provincia_tiraque.jpg">
+    <meta property="og:url" content="https://dember-byu.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/small.css">
+    
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <h1>Eco-Trails Tiraque</h1>
+        <!-- Botón hamburguesa para móviles -->
+        <div class="header-controls">
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode"></button>
+                <button id="menu-toggle" aria-label="Open Navigation Menu">☰</button>
+            </div>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trails.html" class="active">Trails Directory</a></li>
+            <li><a href="checklist.html">Pack Checklist</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+        <h1 id="discover-title">Discover Tiraque</h1>
+
+
+        <div id="visitor-message" class="visitor-message"></div>
+
+
+        <div id="discover-grid-container" class="discover-grid">
+    <!-- JavaScript will render the 8 cards here dynamically -->
+    </main>
+    
+    <dialog id="trail-modal">
+    <div class="modal-box">
+      <button id="close-modal" aria-label="Close Modal">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+</body>
+
+<footer>
+    <p>&copy; 2026 Eco-Trails Tiraque By Dember Perez. | <a href="references.html">References & Citations</a></p>
+  </footer>
+
+
+</html>

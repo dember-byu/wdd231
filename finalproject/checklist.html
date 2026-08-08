@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prepare for your high-altitude trek with our interactive gear packing checklist tool tailored for Tiraque mountain conditions.">
+  <meta name="author" content="Dember Perez">
+  <title>Pack Checklist - Eco-Trails Tiraque</title>
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eco-Trails Tiraque - Turismo de Aventura">
+  <meta property="og:description" content="Prepare for your high-altitude trek with our interactive gear packing checklist tool tailored for Tiraque mountain conditions.">
+  <meta property="og:image" content="images/font.jpg">
+</head>
+<body>
+  <header>
+    <h1>🎒 Gear Checklist</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trails.html">Trails Directory</a>
+      <a href="checklist.html">Pack Checklist</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>High-Altitude Equipment Tracker</h2>
+    <p>Prepare properly for Tiraque's cool climate and high altitudes. Track your progress live before stepping out.</p>
+
+
+    <div class="progress-container">
+      <div id="progress-bar">0%</div>
+    </div>
+
+
+    <form id="gear-form">
+      <input type="text" id="gear-input" placeholder="Type missing gear name (e.g. Cocoa Leaves, Trekking Poles)" required>
+      <button type="submit">Add Item</button>
+    </form>
+
+    <ul id="checklist-items">
+
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eco-Trails Tiraque By Dember Perez | <a href="references.html">References & Citations</a></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
